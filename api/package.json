@@ -28,5 +28,9 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.10"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "per-file": true
   }
 }
