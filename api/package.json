@@ -34,6 +34,6 @@
     "per-file": true
   },
   "engines": {
-    "node": "6.11.1"
+    "node": "10.13.0"
   }
 }
