@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js",
+    "dev": "nodemon --exec babel-node index.js",
     "test": "nyc --require @babel/register ---reporter=html --reporter=text mocha test/*.test.js --timeout 10000 --exit",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
