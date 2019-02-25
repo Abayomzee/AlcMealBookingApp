@@ -425,4 +425,12 @@ span.meal, span.app {
     border-radius: 8px;
     margin: 10px 4.17% 10px 4.17%;
 }
+
+.footer {
+    padding: 30px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    background-color: hsl(0, 80%, 14%);
+}
 /* */
