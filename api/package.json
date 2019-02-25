@@ -32,5 +32,8 @@
   "nyc": {
     "check-coverage": true,
     "per-file": true
+  },
+  "engines": {
+    "node": "6.11.1"
   }
 }
