@@ -1,0 +1,16 @@
+.headerHero {
+    height: 360px !important;
+}
+
+.headerTopic {
+    color: white;
+    font-size: 25px;
+}
+
+.headerTopic h1::after {
+    content: "";
+    display: block;
+    padding: 1px;
+    width: 70px;
+    background-color: white;
+  }

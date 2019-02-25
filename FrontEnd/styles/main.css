@@ -1,0 +1,428 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: candara;
+    animation: fadePage 1s;
+}
+
+div.headerHero {
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(../assest/images/food-bg.jpg);
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+}
+
+.menu {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
+    /* height: 19px; */
+    overflow: auto;
+    /* padding-left: 0 300px; */
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    display: block;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+    /* margin-top: 50px; */
+}
+
+span.meal, span.app {
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.meal {
+    color: #660f0f;
+}
+
+.app {
+    color: #d3d3d3;
+}
+
+.row {
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.login_signUp {
+    width: 20.5%;
+    font-family: candara;
+    /* background-color: red; */
+
+    background: linear-gradient(rgba(255, 255, 255, 0.767), rgba(238, 238, 238, 0.856)), url(../assest/images/order.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+    background-color: white;
+    border-radius: 12px 12px 10px 10px;
+    border: none;
+    box-shadow: 6px 12px 12px 6px rgba(0,0,0,0.3), 6px 12px 12px 6px rgba(0,0,0,0.3);
+    padding-bottom: 50px;
+    overflow: auto;
+
+}
+
+.container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formSpacing {
+    padding: 60px 0;
+}
+
+.heroForm {
+    width: 300px;
+    overflow: auto;
+
+    height: 200px;
+    padding: 50px;
+    
+    /* background-color: red; */
+}
+
+.timeSection {
+    position: relative;
+    background-color: brown;
+}
+
+.timeAndDate {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 150px;
+    position: absolute;
+    top: -75px;
+    background-color: aqua;
+}
+
+.bi {
+    color: black;
+    font-size: 40px;
+}
+
+/* header Hero Form Styles */
+
+.form_header {
+    background-color: hsl(0, 80%, 14%);
+    color: rgb(170, 169, 169);
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    border: none;
+    font-size: 13px;
+}
+
+.form_header a {
+    text-decoration: none;
+    color: white;
+}
+
+.form_header a:hover {
+    color: #ddd6d6;
+    transition: 0.8s;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.form_body {
+    height: 150px;
+    padding: 20px 0;
+}
+
+.form_footer {
+    background-color: hsl(0, 80%, 14%);
+    color: white;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    border: none;
+}
+
+#loginForm input[type="text"] {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 3px solid #642323cc;
+}
+
+#loginForm input[type="button"] {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: hsl(0, 80%, 14%);
+    color: white; 
+    font-variant: small-caps;
+    font-family: candara;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#loginForm input[type="button"]:hover {
+    border: 1px solid hsl(0, 80%, 14%);
+    background-color: white;
+    color: hsl(0, 80%, 14%);
+    font-weight: bold;
+}
+
+.headerDesc {
+    overflow: auto;
+    padding: 0 40px;
+    color: white;
+    font-family: candara;
+}
+
+.headerDesc p {
+    letter-spacing: 2px;
+    margin: 5px 0 5px 0;
+}
+
+.headerDesc h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.headerDesc button {
+    border: 1px solid hsl(0, 80%, 14%);
+    padding: 15px 25px;
+    background-color: white;
+    color: hsl(0, 80%, 14%);
+    border-radius: 7px;
+    margin-top: 25px;
+    transition: .7s;
+    font-weight: bold;   
+}
+
+.headerDesc button:hover {
+    background-color: hsl(0, 80%, 14%);
+    color: white;   
+    transition: .4s; 
+}
+
+.timeRow {
+    /* position: relative; */
+    /* border: 1px solid black; */
+    /* height: 180px; */
+
+    /* background: linear-gradient(#d3939375,rgba(199, 123, 123, 0.342)), url(../assest/images/food.png); */
+    background-image: url(../assest/images/tyt.jpg);
+    background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: repeat;
+  /* background-size: cover; */
+  padding: 50px;
+}
+
+.timeRowDiv {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    /* border: 1px solid black; */
+    /* height: 120px; */
+    /* position: absolute;
+    top: -30px; */
+    background-color: white;
+    /* text-align: center; */
+}
+
+.timeOne {
+    background-color: rgb(243, 243, 243);
+    padding: 15px;
+}
+
+.timeOne i {
+    font-size: 30px;
+}
+
+.timeIcon {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.timeTwo {
+    background-color: white;
+    padding: 15px;
+}
+
+.timeThree {
+    background-color: rgb(243, 243, 243);
+    padding: 15px;
+}
+
+.timeHead {
+    /* text-align: center; */
+    font-size: 20px;
+    font-family: Candara;
+    font-weight: bold;
+}
+
+.aboutImage {
+    padding: 30px;
+}
+
+.aboutTitle  {
+    /* text-align: center; */
+    /* font-size: 30px; */
+    color: hsl(0, 80%, 14%);
+}
+
+.aboutTitle h2::after {
+    content: "";
+    display: block;
+    padding: 1px;
+    width: 100px;
+    background-color: hsl(0, 80%, 14%);
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-top: 10px;
+}
+
+.aboutDesc {
+    padding: 60px 0 10px 0;
+}
+
+.aboutDescImg {
+    text-align: center;
+}
+
+
+.aboutDescText {
+    color: #8d8d8d;
+    /* padding: 100px 0; */
+    /* letter-spacing: 1px; */
+    word-spacing: 2px;
+    font-family: candara;
+    font-size: 18px;
+}
+
+.aboutDescText button {
+    padding: 15px 30px;
+     color: white;
+     background-color: hsl(0, 80%, 14%);
+     border: none;
+     margin: 30px 0 0 0;
+     font-weight: bold;
+}
+
+.aboutDescText button:hover {
+    transition: 0.4s;
+    border: 1px solid hsl(0, 80%, 14%);
+    background-color: white;
+    color: hsl(0, 80%, 14%);
+}
+
+.menuHeading {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.menuHeading p {
+    font-size: 15px;
+    color: #797979;
+    margin-top: 5px;
+}
+
+.menuHeading h3 {
+    margin: 0;
+}
+
+.menuSection {
+    padding: 5px 0;
+}
+
+.foodMenus {
+    text-align: center;
+    padding: 20px;
+}
+
+.allMenuOpt {
+    border-radius: 9px;
+    box-shadow: 0 10px 30px 0 rgba(153,153,153,.2);
+    /* border: 1px solid black; */
+
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.allMenuOpt a {
+    /* color: white; */
+}
+
+.active {
+    background-color: hsl(0, 80%, 14%);
+    color: white;
+}
+
+.mainMenus {
+    padding: 60px 0 40px 0;
+}
+
+.foodName {
+    padding: 5px 0 10px 0;
+}
+
+.foodName h3 {
+    margin: 0;
+}
+
+.foodPrice {
+    padding: 0px 3px;
+    font-size: 25px;
+}
+
+.foodPrice p {
+    margin: 0;
+    color: hsl(0, 80%, 14%);
+}
+
+.eachMenu {
+    box-shadow: 0 10px 30px 0 rgba(153,153,153,.2), 0 10px 30px 0 rgba(153,153,153,.2);
+    border-radius: 8px;
+    margin: 10px 4.17% 10px 4.17%;
+}
+/* */
